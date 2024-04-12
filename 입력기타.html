@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- button 태그 -->
+  <input type="submit" value="등록" />
+  <input type="reset" value="취소">
+  <button type="submit">
+    <img src="./images/facebook.png" alt="페이스북">
+    페이스북에 등록
+  </button>
+  <!-- disable 속성 : 비활성화(값이 들어가기 전에 선택 안되게) -->
+  <input type="text" disabled>
+  <button type="button" disabled>비활성</button>
+  <!-- readonly 속성 : 수정불가(회원정보) -->
+  <input type="text" readonly>
+  <textarea readonly></textarea>
+  <!-- maxlength 속성 : 글자 수 제한 -->
+  <input type="url" maxlength="4">
+  <textarea maxlength="4"></textarea>
+  <!-- checked 속성 : 선택된 상태로 표시(값이 입력되었을 때 체크상태로 표시) -->
+  <form action="#">
+    <fieldset>
+      <legend>좋아하는 과일</legend>
+      <input type="checkbox" id="banana" name="banana" value="banana">
+      <label for="banana">banana</label><br>
+      <input type="checkbox" id="apple" name="apple" value="apple">
+      <label for="apple">apple</label><br>
+      <input type="checkbox" id="orange" name="orange" value="orange"  checked>
+      <label for="orange">orange</label><br>
+    </fieldset>
+  </form>
+  <!-- required 속성 : 필수 항목
+    (내용을 폼에 입력 한 후 submit 버튼을 글릭하면 폼을 서버로 전송 하는데 이 때 필수 필드에 필요한 내용이 모두 채워졌는지 검사) -->
+  <!-- autofocus 속성 : 페이지를 불어오자마자 폼에서 원하는 원하는 요소에 마우스 포커스를 표시  -->
+  <input type="text" placeholder="반드시 입력" autofocus>
+</body>
+</html>
