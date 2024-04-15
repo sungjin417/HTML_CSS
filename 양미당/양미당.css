@@ -1,0 +1,53 @@
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* (디폴트는 컨텐츠 기준)박스 영역은 테두리까지 */ 
+}
+a {
+  text-decoration:none;  /* (디폴트는 언더바가 있음)텍스트 링크 밑줄 없애기 */ 
+}
+
+ul {
+  list-style: none; /* 앞의 점을 없애기*/
+}
+.header {
+  width: 100%;
+  height: 130px;
+  background-color: black;
+}
+.top {
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+.logo {
+  float: left;
+  margin-top: 32px;
+}
+.right {
+  padding-top: 42px;
+}
+.nav {
+  display: flex;
+  height: 60px;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-left: 270px;
+
+}
+.nav > li {
+  width: 400px;
+  text-align: center;
+  list-style-type: none;
+}
+.nav-link{
+  position: relative;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3 ease;
+}
+.main1 {
+  width: 100%;
+  height: 900px;
+  background-image: url(./images/main.png);
+}
