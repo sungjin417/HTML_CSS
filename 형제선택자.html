@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 ~ h2 {
+    color: red;
+  }
+  h1::before {
+    content: "★";
+			color: red;
+  }
+  a:link {
+    color: orange;
+  }
+  a:visited {
+    color: green;
+  }
+  button:hover {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transition: all 1s ease-in;
+  }
+  button {
+    width: 100px;
+    height: 100px;
+  }
+  button:active {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: all 1s ease-in;
+  }
+  input:focus {
+    background-color: red;
+  }
+  input:disabled {
+    background-color: darkgray;
+  }
+ 
+  </style>
+</head>
+<body>
+  <!-- 인접 형제 선택자 : + 기호를 사용하여 인접한 형제 요소 선택-->
+  <!-- 일반형제 선택자 : ~ 기호를 사용하여  이전 선택자 뒤에 오는 형제 관계 요소를 모두 선택자로 지정-->
+  <!-- 가상 요소 선택자 :  ::before, ::after, ::first-letter, ::first-line -->
+  <!-- 가상 클래스 선택자 :  요소의 내용이 아닌 요소의 특정 부분에 스타일을 적용 -->
+  <!-- 동적 가상 클래스 선택자 : :hover(마우스 올리느 동작), :active(마우스 클릭 시) -->
+
+  <h1>Text 1</h1>
+  <h2>Test 2</h2>
+  <h3>Test 3</h3>
+  <a href="http://www.naver.com">네이버</a>
+  <a href="http://www.google.co.kr">구글</a>
+  <button>버튼</button>
+  <label for="in">입력</label>
+  <input type="text" id="in">
+  <label for="in2">입력 비활성화</label>
+  <input type="text" id="in2" disabled>
+</body>
+</html>
