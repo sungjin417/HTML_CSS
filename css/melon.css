@@ -1,0 +1,10 @@
+#header {
+  position: relative;
+  width: 100%;
+  min-width: 1048px;
+  background-image: url(../melon/gnb_menu_repeat.jpg) repeat-x center top;
+  z-index: 20;
+}
+#header.pr_none {
+  padding: 0 19px;  
+}
