@@ -1,0 +1,178 @@
+a {
+  text-decoration: none;
+}
+#container {
+  /* margin: 0 auto; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "header header header header header"
+    "body-main1 body-main1 body-main1 body-main1 body-main1"
+    "body-main2 body-main2 body-main2 body-main2 body-main2"
+    "body-main3 body-main3 body-main3 body-main3 body-main3"
+    "footer footer footer footer footer"
+  ;
+}
+.header {
+  grid-area: header;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+}
+.header-logo {
+  width: 20%;
+  height: 100%;
+}
+#logo {
+  margin: 20px; 
+  float: right;
+}
+.header-nav {
+  width: 80%;
+  padding-left: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-nav ul {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;  /* 요소 사이의 공간을 동일하게 배분합니다. */
+
+}
+.nav-link {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3 ease;
+}
+.nav-link:hover {
+  color: green;
+}
+
+.body-main1 {
+  width: 100%;
+  height: 900px;
+  grid-area: body-main1;
+  background-image: url(./images/main.png);
+  background-size: cover;/* 배경 이미지를 셀 크기에 맞게 조절 */
+  background-position: center; /* 이미지 중앙 정렬 */
+}
+#main1 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+#ani_img1 {
+  padding: 156px 0 0 12px;
+} 
+#logo2 {
+  transition: transform 0.3s ease;
+}
+#logo2:hover {
+  border: 4px solid white;
+  transform: scale(1.2) rotate(-20deg);
+  border-radius: 20%;
+}
+.body-main2 {
+  grid-area: body-main2;
+  width: 100%;
+  height: 900px;
+  background-image: url(./images/main2.png);
+  background-size: cover; /*배경 이미지를 셀 크기에 맞게 조절*/
+  background-position: center; /* 이미지 중앙 정렬 */
+}
+#main2 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+}
+#img_main2{
+  padding: 249px 100px 0 0;
+}
+#iframe1 {
+  margin: 45px 0 0 0;
+}
+.body-main3 {
+  grid-area: body-main3;
+  width: 100%;
+  height: 900px;
+  background-image: url(./images/main3.png);
+  background-size: cover;/* 배경 이미지를 셀 크기에 맞게 조절 */
+  background-position: center; /* 이미지 중앙 정렬 */
+}
+#main3 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+}
+.a {
+  margin-left: 20px;
+  margin-top: 70px;
+  display: flex;
+}
+#a-1 {
+  margin-top: 50px;
+}
+.b-1 {
+  margin-right: 40px;
+}
+#b :nth-child(1) {
+  transition: transform 0.3s ease; 
+}
+#b :nth-child(2) {
+  transition: transform 0.3s ease-out; 
+}
+#b :nth-child(3) {
+  transition: transform 0.3s ease-in-out; 
+}
+#b :nth-child(1) :hover {
+  transform: rotate(5deg); /* 요소를 5도 만큼 회전시킵니다. */
+}
+#b :nth-child(2) :hover {
+  transform: rotate(5deg); /* 요소를 5도 만큼 회전시킵니다. */
+}
+#b :nth-child(3) :hover {
+  transform: rotate(5deg); /* 요소를 5도 만큼 회전시킵니다. */
+}
+.footer {
+  grid-area: footer;
+}
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.footlogo{
+  margin-top: 50px;
+  text-align: center;
+}
+.foottext{
+  margin: 30px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .header{
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: brown;
+  }
+  .header-nav ul {
+    flex-direction: column;
+  }
+  .header-nav{
+    padding-left: 0;
+    flex-direction: row;
+  }
+  .header-nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .nav-link:hover {
+    color: green;
+  }
+ 
+}
